@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retro Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <audio
+      id="music"
+      src="The Pink Panther Theme - Henry Mancini.mp3"
+      loop
+    ></audio>
+    <main class="calc-body">
+      <div class="inputScreen">
+        <span class="left-side"></span>
+        <input type="text" id="screen" readonly />
+      </div>
+      <div class="btns">
+        <audio
+          src="lightningbulb-spacebar-click-keyboard-199448.mp3"
+          id="click-sound"
+        ></audio>
+        <button class="btn btn--action clear">c</button>
+        <button class="btn btn--operator mod">%</button>
+        <button class="btn btn--operator divide">÷</button>
+        <button class="btn btn--action delete">⌫</button>
+        <button class="btn btn--7 btn--num">7</button>
+        <button class="btn btn--8 btn--num">8</button>
+        <button class="btn btn--9 btn--num">9</button>
+        <button class="btn btn--operator multiply">×</button>
+
+        <button class="btn btn--4 btn--num">4</button>
+        <button class="btn btn--5 btn--num">5</button>
+        <button class="btn btn--6 btn--num">6</button>
+        <button class="btn btn--operator subtract">-</button>
+
+        <button class="btn btn--1 btn--num">1</button>
+        <button class="btn btn--2 btn--num">2</button>
+        <button class="btn btn--3 btn--num">3</button>
+        <button class="btn btn--4 btn--operator plus">+</button>
+
+        <button class="btn btn--sound">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="sound--off"
+          >
+            <path
+              d="M13.5 4.06c0-1.336-1.616-2.005-2.56-1.06l-4.5 4.5H4.508c-1.141 0-2.318.664-2.66 1.905A9.76 9.76 0 0 0 1.5 12c0 .898.121 1.768.35 2.595.341 1.24 1.518 1.905 2.659 1.905h1.93l4.5 4.5c.945.945 2.561.276 2.561-1.06V4.06ZM17.78 9.22a.75.75 0 1 0-1.06 1.06L18.44 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06l1.72-1.72 1.72 1.72a.75.75 0 1 0 1.06-1.06L20.56 12l1.72-1.72a.75.75 0 1 0-1.06-1.06l-1.72 1.72-1.72-1.72Z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="sound--on hidden"
+          >
+            <path
+              d="M13.5 4.06c0-1.336-1.616-2.005-2.56-1.06l-4.5 4.5H4.508c-1.141 0-2.318.664-2.66 1.905A9.76 9.76 0 0 0 1.5 12c0 .898.121 1.768.35 2.595.341 1.24 1.518 1.905 2.659 1.905h1.93l4.5 4.5c.945.945 2.561.276 2.561-1.06V4.06ZM18.584 5.106a.75.75 0 0 1 1.06 0c3.808 3.807 3.808 9.98 0 13.788a.75.75 0 0 1-1.06-1.06 8.25 8.25 0 0 0 0-11.668.75.75 0 0 1 0-1.06Z"
+            />
+            <path
+              d="M15.932 7.757a.75.75 0 0 1 1.061 0 6 6 0 0 1 0 8.486.75.75 0 0 1-1.06-1.061 4.5 4.5 0 0 0 0-6.364.75.75 0 0 1 0-1.06Z"
+            />
+          </svg>
+        </button>
+        <button class="btn btn--0 btn--num">0</button>
+        <button class="btn point">.</button>
+        <button class="btn btn--action equal">=</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
