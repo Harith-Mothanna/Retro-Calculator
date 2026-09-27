@@ -122,7 +122,7 @@ const pressDelete = function () {
     return;
   } else if (screenValue === "0" || overwrite) return;
   else if (screenValue.length === 1) {
-    screenValue = previousValue;
+    screenValue = previousValue + "";
     previousValue = null;
     currentOperator = null;
   } else {
